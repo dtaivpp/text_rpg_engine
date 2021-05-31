@@ -2,24 +2,24 @@ import pickle
 
 story = {
     1: {
-      'Text': [
+        'Text': [
             "Hello there..",
-            "I bet you werent exepecting to hear from me so soon...",
+            "I bet you weren't expecting to hear from me so soon...",
             "...you seem a little confused do you know who I am?"
         ],
-      'Options': [
-          ("Yeah of course!", 2),
-          ("I'm sorry I dont", 3)
+        'Options': [
+            ("Yeah of course!", 2),
+            ("I'm sorry I don't", 3)
         ]
     },
-    2: {    
+    2: {
         'Text': [
             "Go figure.. a fall like that couldn't get through your thick skull",
             "Not to mention how could you forget me your best friend Jeff"
         ],
         'Options': [
-          ("What did I hit my head on?", 4),
-          ("Really?", 5)
+            ("What did I hit my head on?", 4),
+            ("Really?", 5)
         ]
     },
     3: {
@@ -28,25 +28,25 @@ story = {
             "I'm your best friend. Jeff.. You and I were just on a mission"
         ],
         'Options': [
-          ("What did I hit my head on?", 4),
-          ("Really?", 5)
+            ("What did I hit my head on?", 4),
+            ("Really?", 5)
         ]
     },
     4: {
-      'Text': [
+        'Text': [
             "You fell off that cliff over there.",
             "Heck of a fall really..."
         ],
-      'Options': []
+        'Options': []
     },
     5: {
-      'Text': [
+        'Text': [
             "Yeah man it was crazy",
             "Never seen a man fall off a cliff like that before..."
         ],
-      'Options': []
+        'Options': []
     }
 }
 
 with open('chapter1.ch', 'wb') as chapter:
-  pickle.dump(story, chapter)
+    pickle.dump(story, chapter)
